@@ -1,0 +1,24 @@
+Drill report for /home/aaronw/kicad/Ralph/tca9555a-i2c-gpio-expander/gpio-expander.kicad_pcb
+Created on Tue 18 Sep 2018 06:54:16 PM PDT
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'gpio-expander.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.40mm  0.016"  (9 holes)
+    T2  0.80mm  0.031"  (6 holes)
+    T3  1.00mm  0.039"  (22 holes)
+
+    Total plated holes count 37
+
+
+Not plated through holes are merged with plated holes
+    unplated through holes:
+    =============================================================
+
+    Total unplated holes count 0
