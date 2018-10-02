@@ -26,58 +26,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/tca9555.pdf" H 3150 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Open JP1
-U 1 1 5BA217B2
-P 2300 3950
-F 0 "JP1" H 2050 4000 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 1550 4000 50  0000 C CNN
-F 2 "SolderJumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2300 3950 50  0001 C CNN
-F 3 "~" H 2300 3950 50  0001 C CNN
-	1    2300 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP2
-U 1 1 5BA21820
-P 2300 4050
-F 0 "JP2" H 2050 4100 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 1550 4100 50  0000 C CNN
-F 2 "SolderJumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2300 4050 50  0001 C CNN
-F 3 "~" H 2300 4050 50  0001 C CNN
-	1    2300 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP3
-U 1 1 5BA21836
-P 2300 4150
-F 0 "JP3" H 2050 4200 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 1550 4200 50  0000 C CNN
-F 2 "SolderJumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2300 4150 50  0001 C CNN
-F 3 "~" H 2300 4150 50  0001 C CNN
-	1    2300 4150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2150 3950 2150 4050
-Wire Wire Line
-	2150 4050 2150 4150
-Connection ~ 2150 4050
-$Comp
-L power:GND #PWR014
-U 1 1 5BA219EF
-P 2150 4500
-F 0 "#PWR014" H 2150 4250 50  0001 C CNN
-F 1 "GND" H 2155 4327 50  0000 C CNN
-F 2 "" H 2150 4500 50  0001 C CNN
-F 3 "" H 2150 4500 50  0001 C CNN
-	1    2150 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2150 4150 2150 4500
-Connection ~ 2150 4150
-$Comp
 L power:GND #PWR013
 U 1 1 5BA21A24
 P 3650 4450
@@ -105,7 +53,7 @@ U 1 1 5BA21BE7
 P 2000 2750
 F 0 "J1" H 1920 2225 50  0000 C CNN
 F 1 "Conn_01x06" H 1920 2316 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x06_P2.00mm_Horizontal" H 2000 2750 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x06_Pitch2.54mm" H 2000 2750 50  0001 C CNN
 F 3 "~" H 2000 2750 50  0001 C CNN
 	1    2000 2750
 	-1   0    0    1   
@@ -127,9 +75,6 @@ Wire Wire Line
 	2250 2050 2250 2450
 Wire Wire Line
 	2250 2450 2200 2450
-Wire Wire Line
-	2550 2050 2250 2050
-Connection ~ 2250 2050
 $Comp
 L power:GND #PWR08
 U 1 1 5BA223A1
@@ -152,7 +97,7 @@ U 1 1 5BA22761
 P 4500 1250
 F 0 "C1" H 4592 1296 50  0000 L CNN
 F 1 "1uF" H 4592 1205 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4500 1250 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4500 1250 50  0001 C CNN
 F 3 "~" H 4500 1250 50  0001 C CNN
 	1    4500 1250
 	1    0    0    -1  
@@ -163,7 +108,7 @@ U 1 1 5BA227B1
 P 4950 1250
 F 0 "C2" H 5042 1296 50  0000 L CNN
 F 1 "10uF" H 5042 1205 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4950 1250 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4950 1250 50  0001 C CNN
 F 3 "~" H 4950 1250 50  0001 C CNN
 	1    4950 1250
 	1    0    0    -1  
@@ -418,48 +363,24 @@ U 1 1 5BA38513
 P 2750 2250
 F 0 "RN1" H 2938 2296 50  0000 L CNN
 F 1 "10k" H 2938 2205 50  0000 L CNN
-F 2 "Resistors_SMD:R_Array_Convex_4x0603" V 3025 2250 50  0001 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 3025 2250 50  0001 C CNN
 F 3 "~" H 2750 2250 50  0001 C CNN
 	1    2750 2250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2550 2050 2650 2050
-Connection ~ 2550 2050
-Wire Wire Line
-	2650 2050 2750 2050
-Connection ~ 2650 2050
-Wire Wire Line
-	2750 2050 2850 2050
-Connection ~ 2750 2050
-Wire Wire Line
 	2450 4050 2650 4050
 $Comp
 L Device:R_Pack04 RN2
 U 1 1 5BA42F5D
-P 2750 3650
-F 0 "RN2" H 2938 3696 50  0000 L CNN
-F 1 "10k" H 2950 3600 50  0000 L CNN
-F 2 "Resistors_SMD:R_Array_Convex_4x0603" V 3025 3650 50  0001 C CNN
-F 3 "~" H 2750 3650 50  0001 C CNN
-	1    2750 3650
+P 2650 4500
+F 0 "RN2" H 2838 4546 50  0000 L CNN
+F 1 "10k" H 2850 4450 50  0000 L CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 2925 4500 50  0001 C CNN
+F 3 "~" H 2650 4500 50  0001 C CNN
+	1    2650 4500
 	1    0    0    1   
 $EndComp
-$Comp
-L power:+3.3V #PWR010
-U 1 1 5BA42FDB
-P 2550 3350
-F 0 "#PWR010" H 2550 3200 50  0001 C CNN
-F 1 "+3.3V" H 2565 3523 50  0000 C CNN
-F 2 "" H 2550 3350 50  0001 C CNN
-F 3 "" H 2550 3350 50  0001 C CNN
-	1    2550 3350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2550 3350 2550 3450
-Wire Wire Line
-	2650 3850 2650 4050
 Connection ~ 2650 4050
 Wire Wire Line
 	2650 4050 2950 4050
@@ -469,7 +390,7 @@ U 1 1 5BA58868
 P 5400 1250
 F 0 "C3" H 5492 1296 50  0000 L CNN
 F 1 "10uF" H 5492 1205 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5400 1250 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5400 1250 50  0001 C CNN
 F 3 "~" H 5400 1250 50  0001 C CNN
 	1    5400 1250
 	1    0    0    -1  
@@ -502,25 +423,12 @@ Wire Wire Line
 	2450 3950 2750 3950
 Wire Wire Line
 	2450 4150 2550 4150
-Wire Wire Line
-	2750 3850 2750 3950
 Connection ~ 2750 3950
 Wire Wire Line
 	2750 3950 2950 3950
-Wire Wire Line
-	2550 3850 2550 4150
 Connection ~ 2550 4150
 Wire Wire Line
 	2550 4150 2950 4150
-Wire Wire Line
-	2550 3450 2650 3450
-Connection ~ 2550 3450
-Wire Wire Line
-	2650 3450 2750 3450
-Connection ~ 2650 3450
-Wire Wire Line
-	2750 3450 2850 3450
-Connection ~ 2750 3450
 Text Label 2300 2550 0    50   ~ 0
 SDA
 Text Label 2300 2650 0    50   ~ 0
@@ -539,7 +447,7 @@ U 1 1 5B9CF5D7
 P 5800 1250
 F 0 "C4" H 5892 1296 50  0000 L CNN
 F 1 "10uF" H 5892 1205 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5800 1250 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5800 1250 50  0001 C CNN
 F 3 "~" H 5800 1250 50  0001 C CNN
 	1    5800 1250
 	1    0    0    -1  
@@ -550,4 +458,90 @@ Connection ~ 5400 1150
 Wire Wire Line
 	5400 1350 5800 1350
 Connection ~ 5400 1350
+Wire Wire Line
+	2550 4300 2550 4150
+Wire Wire Line
+	2650 4050 2650 4300
+Wire Wire Line
+	2750 4300 2750 3950
+$Comp
+L power:GND #PWR0101
+U 1 1 5BC190CF
+P 2750 4700
+F 0 "#PWR0101" H 2750 4450 50  0001 C CNN
+F 1 "GND" H 2755 4527 50  0000 C CNN
+F 2 "" H 2750 4700 50  0001 C CNN
+F 3 "" H 2750 4700 50  0001 C CNN
+	1    2750 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 4700 2650 4700
+Connection ~ 2750 4700
+Wire Wire Line
+	2650 4700 2550 4700
+Connection ~ 2650 4700
+$Comp
+L Switch:SW_DIP_x06 SW1
+U 1 1 5BC21FF9
+P 2200 1350
+F 0 "SW1" H 2200 1917 50  0000 C CNN
+F 1 "SW_DIP_x06" H 2200 1826 50  0000 C CNN
+F 2 "Buttons_Switches_SMD:SW_DIP_x6_W5.08mm_Slide_Copal_CHS-A" H 2200 1350 50  0001 C CNN
+F 3 "" H 2200 1350 50  0001 C CNN
+	1    2200 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0102
+U 1 1 5BC2887B
+P 1900 1000
+F 0 "#PWR0102" H 1900 850 50  0001 C CNN
+F 1 "+3.3V" H 1915 1173 50  0000 C CNN
+F 2 "" H 1900 1000 50  0001 C CNN
+F 3 "" H 1900 1000 50  0001 C CNN
+	1    1900 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1250 2750 1250
+Wire Wire Line
+	2500 1150 2650 1150
+Wire Wire Line
+	2500 1050 2550 1050
+Text Label 3100 1550 0    50   ~ 0
+A0
+Text Label 3100 1450 0    50   ~ 0
+A1
+Text Label 3100 1350 0    50   ~ 0
+A2
+Wire Wire Line
+	1900 1000 1900 1050
+Wire Wire Line
+	1900 1050 1900 1150
+Connection ~ 1900 1050
+Wire Wire Line
+	1900 1150 1900 1250
+Connection ~ 1900 1150
+Wire Wire Line
+	1900 1250 1900 1350
+Connection ~ 1900 1250
+Wire Wire Line
+	1900 1350 1900 1450
+Connection ~ 1900 1350
+Wire Wire Line
+	1900 1450 1900 1550
+Connection ~ 1900 1450
+Wire Wire Line
+	2550 1050 2550 2050
+Wire Wire Line
+	2650 1150 2650 2050
+Wire Wire Line
+	2500 1550 3300 1550
+Wire Wire Line
+	2500 1450 3300 1450
+Wire Wire Line
+	2500 1350 3300 1350
+Wire Wire Line
+	2750 2050 2750 1250
 $EndSCHEMATC
