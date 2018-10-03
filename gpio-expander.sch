@@ -48,17 +48,6 @@ F 3 "" H 3650 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x06 J1
-U 1 1 5BA21BE7
-P 2000 2750
-F 0 "J1" H 1920 2225 50  0000 C CNN
-F 1 "Conn_01x06" H 1920 2316 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x06_Pitch2.54mm" H 2000 2750 50  0001 C CNN
-F 3 "~" H 2000 2750 50  0001 C CNN
-	1    2000 2750
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:+3.3V #PWR04
 U 1 1 5BA21C3D
 P 2250 2050
@@ -73,24 +62,17 @@ Wire Wire Line
 	2950 2550 2650 2550
 Wire Wire Line
 	2250 2050 2250 2450
-Wire Wire Line
-	2250 2450 2200 2450
 $Comp
 L power:GND #PWR08
 U 1 1 5BA223A1
-P 2200 3150
-F 0 "#PWR08" H 2200 2900 50  0001 C CNN
-F 1 "GND" H 2205 2977 50  0000 C CNN
-F 2 "" H 2200 3150 50  0001 C CNN
-F 3 "" H 2200 3150 50  0001 C CNN
-	1    2200 3150
+P 2100 3650
+F 0 "#PWR08" H 2100 3400 50  0001 C CNN
+F 1 "GND" H 2105 3477 50  0000 C CNN
+F 2 "" H 2100 3650 50  0001 C CNN
+F 3 "" H 2100 3650 50  0001 C CNN
+	1    2100 3650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2200 3150 2200 2950
-Wire Wire Line
-	2200 2950 2200 2850
-Connection ~ 2200 2950
 $Comp
 L Device:C_Small C1
 U 1 1 5BA22761
@@ -369,7 +351,7 @@ F 3 "~" H 2750 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2450 4050 2650 4050
+	2450 4050 2550 4050
 $Comp
 L Device:R_Pack04 RN2
 U 1 1 5BA42F5D
@@ -381,9 +363,6 @@ F 3 "~" H 2650 4500 50  0001 C CNN
 	1    2650 4500
 	1    0    0    1   
 $EndComp
-Connection ~ 2650 4050
-Wire Wire Line
-	2650 4050 2950 4050
 $Comp
 L Device:C_Small C3
 U 1 1 5BA58868
@@ -401,34 +380,18 @@ Connection ~ 4950 1150
 Wire Wire Line
 	4950 1350 5400 1350
 Wire Wire Line
-	2200 2750 2550 2750
-Wire Wire Line
 	2750 2450 2750 2650
 Connection ~ 2750 2650
 Wire Wire Line
 	2750 2650 2950 2650
 Wire Wire Line
-	2200 2650 2750 2650
-Wire Wire Line
 	2650 2450 2650 2550
 Connection ~ 2650 2550
-Wire Wire Line
-	2200 2550 2650 2550
 Wire Wire Line
 	2550 2450 2550 2750
 Connection ~ 2550 2750
 Wire Wire Line
 	2550 2750 2950 2750
-Wire Wire Line
-	2450 3950 2750 3950
-Wire Wire Line
-	2450 4150 2550 4150
-Connection ~ 2750 3950
-Wire Wire Line
-	2750 3950 2950 3950
-Connection ~ 2550 4150
-Wire Wire Line
-	2550 4150 2950 4150
 Text Label 2300 2550 0    50   ~ 0
 SDA
 Text Label 2300 2650 0    50   ~ 0
@@ -458,36 +421,26 @@ Connection ~ 5400 1150
 Wire Wire Line
 	5400 1350 5800 1350
 Connection ~ 5400 1350
-Wire Wire Line
-	2550 4300 2550 4150
-Wire Wire Line
-	2650 4050 2650 4300
-Wire Wire Line
-	2750 4300 2750 3950
 $Comp
 L power:GND #PWR0101
 U 1 1 5BC190CF
-P 2750 4700
-F 0 "#PWR0101" H 2750 4450 50  0001 C CNN
-F 1 "GND" H 2755 4527 50  0000 C CNN
-F 2 "" H 2750 4700 50  0001 C CNN
-F 3 "" H 2750 4700 50  0001 C CNN
-	1    2750 4700
+P 2450 4700
+F 0 "#PWR0101" H 2450 4450 50  0001 C CNN
+F 1 "GND" H 2455 4527 50  0000 C CNN
+F 2 "" H 2450 4700 50  0001 C CNN
+F 3 "" H 2450 4700 50  0001 C CNN
+	1    2450 4700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2750 4700 2650 4700
-Connection ~ 2750 4700
-Wire Wire Line
 	2650 4700 2550 4700
-Connection ~ 2650 4700
 $Comp
 L Switch:SW_DIP_x06 SW1
 U 1 1 5BC21FF9
 P 2200 1350
 F 0 "SW1" H 2200 1917 50  0000 C CNN
 F 1 "SW_DIP_x06" H 2200 1826 50  0000 C CNN
-F 2 "Buttons_Switches_SMD:SW_DIP_x6_W5.08mm_Slide_Copal_CHS-A" H 2200 1350 50  0001 C CNN
+F 2 "Aaron:SW_DIP_SPSTx06_Slide_GrayHill_97C06_W4.5mm_P1.27mm" H 2200 1350 50  0001 C CNN
 F 3 "" H 2200 1350 50  0001 C CNN
 	1    2200 1350
 	1    0    0    -1  
@@ -544,4 +497,141 @@ Wire Wire Line
 	2500 1350 3300 1350
 Wire Wire Line
 	2750 2050 2750 1250
+Wire Wire Line
+	2550 2750 2550 3250
+Wire Wire Line
+	2750 2650 2750 3150
+Text Label 2550 2000 1    50   ~ 0
+~INT_PU
+Text Label 2650 2000 1    50   ~ 0
+SCL_PU
+Text Label 2750 2000 1    50   ~ 0
+SDA_PU
+Wire Wire Line
+	2450 4300 2450 4150
+Wire Wire Line
+	2450 4150 2950 4150
+Wire Wire Line
+	2550 4300 2550 4050
+Connection ~ 2550 4050
+Wire Wire Line
+	2550 4050 2950 4050
+Wire Wire Line
+	2450 3950 2650 3950
+Wire Wire Line
+	2650 4300 2650 3950
+Connection ~ 2650 3950
+Wire Wire Line
+	2650 3950 2950 3950
+Wire Wire Line
+	2450 4700 2550 4700
+Connection ~ 2550 4700
+Connection ~ 2450 4700
+$Comp
+L fiducial:FIDUCIAL_1MM FID1
+U 1 1 5BB5BAAB
+P 7000 1000
+F 0 "FID1" H 7103 1106 60  0000 L CNN
+F 1 "FIDUCIAL_1MM" H 7103 1000 60  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 7103 894 60  0000 L CNN
+F 3 "" H 7000 1000 60  0000 C CNN
+	1    7000 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L fiducial:FIDUCIAL_1MM FID2
+U 1 1 5BB5BD3A
+P 7000 1300
+F 0 "FID2" H 7103 1406 60  0000 L CNN
+F 1 "FIDUCIAL_1MM" H 7103 1300 60  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Dia_2.54mm_Outer_CopperBottom" H 7103 1194 60  0000 L CNN
+F 3 "" H 7000 1300 60  0000 C CNN
+	1    7000 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L fiducial:FIDUCIAL_1MM FID3
+U 1 1 5BB61DDE
+P 7000 1650
+F 0 "FID3" H 7103 1756 60  0000 L CNN
+F 1 "FIDUCIAL_1MM" H 7103 1650 60  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Dia_2.54mm_Outer_CopperBottom" H 7103 1544 60  0000 L CNN
+F 3 "" H 7000 1650 60  0000 C CNN
+	1    7000 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L fiducial:FIDUCIAL_1MM FID4
+U 1 1 5BB61F40
+P 7000 1950
+F 0 "FID4" H 7103 2056 60  0000 L CNN
+F 1 "FIDUCIAL_1MM" H 7103 1950 60  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 7103 1844 60  0000 L CNN
+F 3 "" H 7000 1950 60  0000 C CNN
+	1    7000 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x10 J1
+U 1 1 5BB62464
+P 1800 2950
+F 0 "J1" H 1720 2225 50  0000 C CNN
+F 1 "Conn_01x10" H 1720 2316 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x10_Pitch2.54mm" H 1800 2950 50  0001 C CNN
+F 3 "~" H 1800 2950 50  0001 C CNN
+	1    1800 2950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2000 2450 2250 2450
+Wire Wire Line
+	2000 2550 2650 2550
+Wire Wire Line
+	2000 2650 2750 2650
+Wire Wire Line
+	2000 2750 2550 2750
+Wire Wire Line
+	2100 3650 2100 3350
+Wire Wire Line
+	2100 2850 2000 2850
+Wire Wire Line
+	2000 2950 2250 2950
+Wire Wire Line
+	2250 2950 2250 2450
+Connection ~ 2250 2450
+Wire Wire Line
+	2000 3050 2650 3050
+Wire Wire Line
+	2650 3050 2650 2550
+Wire Wire Line
+	2750 3150 2000 3150
+Wire Wire Line
+	2000 3250 2550 3250
+Wire Wire Line
+	2000 3350 2100 3350
+Connection ~ 2100 3350
+Wire Wire Line
+	2100 3350 2100 2850
+$Comp
+L Mechanical:MountingHole MH2
+U 1 1 5BB8C115
+P 7000 2550
+F 0 "MH2" H 7100 2596 50  0000 L CNN
+F 1 "MountingHole" H 7100 2505 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm" H 7000 2550 50  0001 C CNN
+F 3 "~" H 7000 2550 50  0001 C CNN
+	1    7000 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MH1
+U 1 1 5BB8F6EA
+P 7000 2300
+F 0 "MH1" H 7100 2346 50  0000 L CNN
+F 1 "MountingHole" H 7100 2255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm" H 7000 2300 50  0001 C CNN
+F 3 "~" H 7000 2300 50  0001 C CNN
+	1    7000 2300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
