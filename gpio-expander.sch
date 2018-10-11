@@ -20,7 +20,7 @@ U 1 1 5BA216B0
 P 3650 3350
 F 0 "U1" H 3300 4300 50  0000 C CNN
 F 1 "TCA9555DBT" H 3900 4300 50  0000 C CNN
-F 2 "Housings_SSOP:SOIC-24_5.3x6.2mm_Pitch0.65" H 4700 2350 50  0001 C CNN
+F 2 "Housings_SSOP:TSSOP-24_4.4x7.8mm_Pitch0.65mm" H 4700 2350 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tca9555.pdf" H 3150 4250 50  0001 C CNN
 	1    3650 3350
 	1    0    0    -1  
@@ -58,8 +58,6 @@ F 3 "" H 2250 2050 50  0001 C CNN
 	1    2250 2050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2950 2550 2650 2550
 Wire Wire Line
 	2250 2050 2250 2450
 $Comp
@@ -340,19 +338,6 @@ P15
 Text Label 5650 3850 0    50   ~ 0
 P17
 $Comp
-L Device:R_Pack04 RN1
-U 1 1 5BA38513
-P 2750 2250
-F 0 "RN1" H 2938 2296 50  0000 L CNN
-F 1 "10k" H 2938 2205 50  0000 L CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 3025 2250 50  0001 C CNN
-F 3 "~" H 2750 2250 50  0001 C CNN
-	1    2750 2250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2450 4050 2550 4050
-$Comp
 L Device:R_Pack04 RN2
 U 1 1 5BA42F5D
 P 2650 4500
@@ -379,16 +364,6 @@ Wire Wire Line
 Connection ~ 4950 1150
 Wire Wire Line
 	4950 1350 5400 1350
-Wire Wire Line
-	2750 2450 2750 2650
-Connection ~ 2750 2650
-Wire Wire Line
-	2750 2650 2950 2650
-Wire Wire Line
-	2650 2450 2650 2550
-Connection ~ 2650 2550
-Wire Wire Line
-	2550 2450 2550 2750
 Connection ~ 2550 2750
 Wire Wire Line
 	2550 2750 2950 2750
@@ -432,8 +407,6 @@ F 3 "" H 2450 4700 50  0001 C CNN
 	1    2450 4700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2650 4700 2550 4700
 $Comp
 L Switch:SW_DIP_x06 SW1
 U 1 1 5BC21FF9
@@ -457,17 +430,11 @@ F 3 "" H 1900 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2500 1250 2750 1250
-Wire Wire Line
 	2500 1150 2650 1150
 Wire Wire Line
 	2500 1050 2550 1050
-Text Label 3100 1550 0    50   ~ 0
-A0
 Text Label 3100 1450 0    50   ~ 0
 A1
-Text Label 3100 1350 0    50   ~ 0
-A2
 Wire Wire Line
 	1900 1000 1900 1050
 Wire Wire Line
@@ -496,37 +463,15 @@ Wire Wire Line
 Wire Wire Line
 	2500 1350 3300 1350
 Wire Wire Line
-	2750 2050 2750 1250
-Wire Wire Line
 	2550 2750 2550 3250
-Wire Wire Line
-	2750 2650 2750 3150
 Text Label 2550 2000 1    50   ~ 0
 ~INT_PU
 Text Label 2650 2000 1    50   ~ 0
-SCL_PU
-Text Label 2750 2000 1    50   ~ 0
 SDA_PU
 Wire Wire Line
-	2450 4300 2450 4150
-Wire Wire Line
-	2450 4150 2950 4150
-Wire Wire Line
 	2550 4300 2550 4050
-Connection ~ 2550 4050
 Wire Wire Line
 	2550 4050 2950 4050
-Wire Wire Line
-	2450 3950 2650 3950
-Wire Wire Line
-	2650 4300 2650 3950
-Connection ~ 2650 3950
-Wire Wire Line
-	2650 3950 2950 3950
-Wire Wire Line
-	2450 4700 2550 4700
-Connection ~ 2550 4700
-Connection ~ 2450 4700
 $Comp
 L fiducial:FIDUCIAL_1MM FID1
 U 1 1 5BB5BAAB
@@ -585,10 +530,6 @@ $EndComp
 Wire Wire Line
 	2000 2450 2250 2450
 Wire Wire Line
-	2000 2550 2650 2550
-Wire Wire Line
-	2000 2650 2750 2650
-Wire Wire Line
 	2000 2750 2550 2750
 Wire Wire Line
 	2100 3650 2100 3350
@@ -599,12 +540,6 @@ Wire Wire Line
 Wire Wire Line
 	2250 2950 2250 2450
 Connection ~ 2250 2450
-Wire Wire Line
-	2000 3050 2650 3050
-Wire Wire Line
-	2650 3050 2650 2550
-Wire Wire Line
-	2750 3150 2000 3150
 Wire Wire Line
 	2000 3250 2550 3250
 Wire Wire Line
@@ -634,4 +569,69 @@ F 3 "~" H 7000 2300 50  0001 C CNN
 	1    7000 2300
 	1    0    0    -1  
 $EndComp
+Text Label 3100 1350 0    50   ~ 0
+A0
+Text Label 3100 1550 0    50   ~ 0
+A2
+Wire Wire Line
+	2450 3950 2950 3950
+Wire Wire Line
+	2450 3950 2450 4300
+Wire Wire Line
+	2950 4150 2650 4150
+Wire Wire Line
+	2650 4150 2650 4300
+Wire Wire Line
+	2750 4700 2750 5000
+Wire Wire Line
+	2750 5000 3150 5000
+Text Label 2750 4300 0    50   ~ 0
+SCL_PU
+Wire Wire Line
+	2500 1250 3300 1250
+Text Label 3000 1250 0    50   ~ 0
+SCL_PU
+Wire Wire Line
+	2750 4300 3050 4300
+Text Label 2900 5000 0    50   ~ 0
+SCL
+$Comp
+L device:R_Pack02 RN1
+U 1 1 5BBC208F
+P 2650 2250
+F 0 "RN1" H 2738 2296 50  0000 L CNN
+F 1 "R_Pack02" H 2738 2205 50  0000 L CNN
+F 2 "Resistor_SMD:R_Array_Concave_2x0603" V 2825 2250 50  0001 C CNN
+F 3 "" H 2650 2250 50  0001 C CNN
+	1    2650 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 2450 2550 2750
+Wire Wire Line
+	2000 2550 2650 2550
+Wire Wire Line
+	2000 3050 2650 3050
+Wire Wire Line
+	2650 2450 2650 2550
+Connection ~ 2650 2550
+Wire Wire Line
+	2650 4700 2550 4700
+Wire Wire Line
+	2550 4700 2450 4700
+Connection ~ 2550 4700
+Connection ~ 2450 4700
+Wire Wire Line
+	2650 2550 2650 3050
+Wire Wire Line
+	2650 2550 2950 2550
+Wire Wire Line
+	2750 3150 2750 2650
+Connection ~ 2750 2650
+Wire Wire Line
+	2750 2650 2950 2650
+Wire Wire Line
+	2000 3150 2750 3150
+Wire Wire Line
+	2000 2650 2750 2650
 $EndSCHEMATC
