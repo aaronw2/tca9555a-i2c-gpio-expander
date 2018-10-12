@@ -20,7 +20,7 @@ U 1 1 5BA216B0
 P 3650 3350
 F 0 "U1" H 3300 4300 50  0000 C CNN
 F 1 "TCA9555DBT" H 3900 4300 50  0000 C CNN
-F 2 "Housings_SSOP:TSSOP-24_4.4x7.8mm_Pitch0.65mm" H 4700 2350 50  0001 C CNN
+F 2 "Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm" H 4700 2350 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tca9555.pdf" H 3150 4250 50  0001 C CNN
 	1    3650 3350
 	1    0    0    -1  
